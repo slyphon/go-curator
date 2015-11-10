@@ -3,6 +3,7 @@ package curator
 import (
 	"errors"
 	"log"
+	"net"
 	"strings"
 	"time"
 
@@ -133,7 +134,7 @@ func NewCuratorZookeeperClient(zookeeperDialer ZookeeperDialer, ensembleProvider
 	}
 
 	if zookeeperDialer == nil {
-		zookeeperDialer = &DefaultZookeeperDialer{}
+		zookeeperDialer = &DefaultZookeeperDialer{net.DialTimeout}
 	}
 
 	dialer := NewZookeeperDialer(func(connString string, sessionTimeout time.Duration, canBeReadOnly bool) (conn ZookeeperConnection, events <-chan zk.Event, err error) {
