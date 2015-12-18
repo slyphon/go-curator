@@ -6,7 +6,7 @@ Curator n ˈkyoor͝ˌātər: a keeper or custodian of a museum or other collecti
 
 ## What is curator.go?
 
-Curator.go is a Golang porting for Curator, which base on the [go-zookeeper](https://github.com/samuel/go-zookeeper/).
+Curator.go is a Golang porting for Curator, which base on the [go-zookeeper](https://github.com/slyphon/go-zookeeper/).
 
 # Getting Started
 

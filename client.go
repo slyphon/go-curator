@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/samuel/go-zookeeper/zk"
+	"github.com/slyphon/go-zookeeper/zk"
 )
 
 type ZookeeperConnection interface {

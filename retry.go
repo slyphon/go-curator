@@ -6,7 +6,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/samuel/go-zookeeper/zk"
+	"github.com/slyphon/go-zookeeper/zk"
 )
 
 // Abstraction for retry policies to sleep
